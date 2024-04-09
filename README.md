@@ -1,6 +1,6 @@
 # consultaSQL
 Consulta SQL que retorna as colunas de uma tabela preparada para virar uma entidade ou DTO em Java
-
+~~~
 SELECT CONCAT('private ',
     CASE 
         WHEN DATA_TYPE IN ('image') THEN 'byte[] '
@@ -26,4 +26,4 @@ SELECT CONCAT('private ',
 ) AS JavaType
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'NomeDaTabela';
-
+~~~
